@@ -4,6 +4,7 @@ public class Leetcode338 {
     public static void main(String[] args) {
         int n=2;
         System.out.println(countBits(n));
+
     }
     public static int[] countBits(int n) {
             int[] dp = new int[n + 1];
