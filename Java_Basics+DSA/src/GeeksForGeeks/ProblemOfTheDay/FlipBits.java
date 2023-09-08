@@ -25,6 +25,7 @@ public class FlipBits {
             return c2;
         }else{
             return max+c2;
+
         }
     }
 }
