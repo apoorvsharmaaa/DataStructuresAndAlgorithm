@@ -5,6 +5,7 @@ public class Leetcode377 {
        int [] nums = {1,2,3};
        int target = 4;
         System.out.println(combinationSum4(nums,target));
+
     }
     public static int combinationSum4(int[] nums, int target) {
         var dp = new int[target + 1];
