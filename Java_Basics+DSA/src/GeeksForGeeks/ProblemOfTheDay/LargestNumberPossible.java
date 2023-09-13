@@ -9,7 +9,6 @@ public class LargestNumberPossible {
 
     static String findLargest(int N, int S) {
         int big = Math.max(N, S);
-
         int currNum = 0;
 
         int i = 10;
