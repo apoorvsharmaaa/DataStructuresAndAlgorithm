@@ -1,0 +1,33 @@
+package GeeksForGeeks.ProblemOfTheDay;
+
+public class PartitionEqualSubsetSum {
+    public static void main(String[] args) {
+        int N=4;
+        int [] arr={1,5,11,5};
+        equalPartition(N,arr);
+    }
+   public static int equalPartition(int N, int arr[])
+    {
+        // code here
+        int sum = 0;
+        for(int i=0; i<N; i++) {
+            sum += arr[i];
+        }
+
+        if(sum %2 == 1) return 0;
+
+        sum /= 2;
+        boolean[] dp = new boolean[sum+1];
+        return (subset(arr, sum, N-1, dp) == true) ? 1:0;
+    }
+
+    static boolean subset(int[] arr, int sum , int N, boolean[] dp) {
+        if(sum == 0) return true;
+        if(N <= 0) return false;
+        if(sum < 0) return false;
+
+        if(dp[sum] == true) return false;
+
+        return dp[sum] = subset(arr, sum-arr[N-1], N-1, dp) || subset(arr, sum, N-1, dp);
+    }
+}
