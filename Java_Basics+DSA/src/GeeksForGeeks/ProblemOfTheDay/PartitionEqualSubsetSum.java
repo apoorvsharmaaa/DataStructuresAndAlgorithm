@@ -12,6 +12,7 @@ public class PartitionEqualSubsetSum {
         int sum = 0;
         for(int i=0; i<N; i++) {
             sum += arr[i];
+
         }
 
         if(sum %2 == 1) return 0;
