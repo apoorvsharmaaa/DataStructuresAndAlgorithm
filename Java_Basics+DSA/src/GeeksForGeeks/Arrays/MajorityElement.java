@@ -29,6 +29,7 @@ public class MajorityElement {
             }
         }
         count=0;
+
         for(int i=0;i<size;i++)
         {
             if(a[res]==a[i])
