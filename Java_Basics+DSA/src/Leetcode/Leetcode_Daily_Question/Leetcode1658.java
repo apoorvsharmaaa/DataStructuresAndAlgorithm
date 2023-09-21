@@ -12,6 +12,7 @@ public class Leetcode1658 {
         int total = 0;
         for (int num : nums) {
             total += num;
+
         }
 
         int target = total - x;
