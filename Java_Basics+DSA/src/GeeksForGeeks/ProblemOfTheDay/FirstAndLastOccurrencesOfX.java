@@ -63,6 +63,7 @@ public class FirstAndLastOccurrencesOfX {
                     if (arr[mid] == x) {
                         ans = mid;
 
+
                     }
                     low = mid + 1;
                 } else {
