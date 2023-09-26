@@ -71,6 +71,7 @@ public class FirstAndLastOccurrencesOfX {
                 }
             }
 
+
             if (ans != -1) {
                 return ans;
             }
