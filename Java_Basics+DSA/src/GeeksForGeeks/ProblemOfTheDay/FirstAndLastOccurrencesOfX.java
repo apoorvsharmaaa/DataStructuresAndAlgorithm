@@ -69,6 +69,7 @@ public class FirstAndLastOccurrencesOfX {
                 } else {
                     high = mid - 1;
                 }
+
             }
 
 
