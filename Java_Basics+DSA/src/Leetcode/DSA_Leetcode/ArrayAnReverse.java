@@ -8,6 +8,7 @@ public class ArrayAnReverse {
 //        System.out.println(Arrays.toString(arr));      //Sahi hai
     }
     static void reverse(int[] arr) {
+
         int c = Math.floorDiv(6, 2);
         int temp;
         for (int i = 0; i < 3; i++) {
