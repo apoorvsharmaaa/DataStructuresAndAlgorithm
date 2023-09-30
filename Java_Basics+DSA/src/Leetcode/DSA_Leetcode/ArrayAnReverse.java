@@ -14,6 +14,7 @@ public class ArrayAnReverse {
         for (int i = 0; i < 3; i++) {
             temp = arr[i];
             arr[i] = arr[arr.length - i - 1];
+
             arr[arr.length - i - 1] = temp;
         }
         for (int elements : arr) {
